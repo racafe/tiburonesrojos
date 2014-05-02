@@ -26,7 +26,7 @@
        <param name="key" value="willoughby"/>
     </feature-->
 	
-	<preference name="StatusBarOverlaysWebView" value="false" />
+	<preference name="StatusBarOverlaysWebView" value="true" />
     <preference name="phonegap-version" value="3.3.0" />
     <!--preference name="orientation"      value="landscape" /-->
     <preference name="target-device"    value="universal" />
