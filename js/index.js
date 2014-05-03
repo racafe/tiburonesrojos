@@ -28,6 +28,9 @@ var app = {
     bindEvents: function() {
 //        document.addEventListener('deviceready',this.onDeviceReady, false);
 		document.addEventListener('deviceready',this.scan, false);
+		document.addEventListener('touchend',function(){
+				alert(StatusBar.overlaysWebView());
+        });
 //        document.getElementById('encode').addEventListener('click', this.encode, false);
     },
 
@@ -54,5 +57,14 @@ var app = {
     scan: function() {
         console.log('scanning');
         myScroll = new iScroll('wrapper',{ hScrollbar:false, vScrollbar:false, bounce:false, momentum:false, scrollX: true, scrollY:false, snap:'section'});
+		setInterval(function(){
+				if(StatusBar.isVisible()){
+					StatusBar.hide();
+				}else{
+					StatusBar.show();
+					StatusBar.backgroundColorByName("red");
+				}
+			},3000);
+			StatusBar.overlaysWebView(true);
     }
 };
