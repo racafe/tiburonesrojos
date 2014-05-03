@@ -57,6 +57,7 @@ var app = {
 		//StatusBar.hide();
 		setTimeout(function(){
 			$('#splash').fadeOut(function(){
+				StatusBar.overlaysWebView(true);
 				StatusBar.show();
 			});
 		},3000);
