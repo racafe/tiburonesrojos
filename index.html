@@ -41,6 +41,7 @@
                     <p><a href="#" onclick="overlayWebView(false); return false;">Status Bar sits above WebView</a></p>
                 
                     <p><a href="#" onclick="lightContent(); return false;">Light Content Status Bar</a></p>
+                    <p><a href="#" onclick="StatusBar.styleLightContent(); return false;">Light Content Status Bar</a></p>
                     <p><a href="#" onclick="defaultStyle(); return false;">Default Status Bar Style</a></p>
                 </section>
                 <section style="background-image:url(img/3.jpg)">
@@ -53,11 +54,11 @@
                 <section style="background-image:url(img/6.jpg)"></section>
             </div>
             </div>
-        <!--script type="text/javascript" src="cordova.js"></script-->
+        <script type="text/javascript" src="cordova.js"></script>
+        <script src="statusbar.js" type="text/javascript" charset="utf-8"></script>
         <script src="js/jquery.min.js"></script>
         <script type="text/javascript" src="js/iscroll.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
-        <script src="statusbar.js" type="text/javascript" charset="utf-8"></script>
         <script type="text/javascript">
             app.initialize();
 			myScroll = new iScroll('wrapper',{ hScrollbar:false, vScrollbar:false, bounce:false, momentum:false, scrollX: true, scrollY:false, snap:'section'});
