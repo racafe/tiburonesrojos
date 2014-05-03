@@ -54,9 +54,11 @@ var app = {
     scan: function() {
         console.log('scanning');
 		myScroll = new iScroll('wrapper',{ hScrollbar:false, vScrollbar:false, bounce:false, momentum:false, scrollX: true, scrollY:false, snap:'section'});
-		StatusBar.hide();
+		//StatusBar.hide();
 		setTimeout(function(){
-			$('#splash').fadeOut();
+			$('#splash').fadeOut(function(){
+				StatusBar.show();
+			});
 		},3000);
     }
 };
