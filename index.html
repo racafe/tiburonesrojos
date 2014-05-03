@@ -30,19 +30,19 @@
             <div id="scroller">
                 <section style="background-image:url(img/2.jpg)">
                 	<!--div onClick="StatusBar.overlaysWebView(true);">OVERLAYED</div-->
-                    <p><a href="#" onclick="showStatusBar(false); return false;">Hide Status Bar</a></p>
-                    <p><a href="#" onclick="showStatusBar(true); return false;">Show Status Bar</a></p>
+                    <p><a href="#" onclick="StatusBar.hide(); return false;">Hide Status Bar</a></p>
+                    <p><a href="#" onclick="StatusBar.show(); return false;">Show Status Bar</a></p>
             
-                    <p><a href="#" onclick="setColor('red'); return false;">Red Status Bar</a></p>
-                    <p><a href="#" onclick="setColor('blue'); return false;">Blue Status Bar</a></p>
-                    <p><a href="#" onclick="setColor('black'); return false;">Black Status Bar</a></p>
+                    <p><a href="#" onclick="StatusBar.backgroundColorByName('red'); return false;">Red Status Bar</a></p>
+                    <p><a href="#" onclick="StatusBar.backgroundColorByName('blue'); return false;">Blue Status Bar</a></p>
+                    <p><a href="#" onclick="StatusBar.backgroundColorByName('black'); return false;">Black Status Bar</a></p>
     
-                    <p><a href="#" onclick="overlayWebView(true); return false;">Status Bar Overlays WebView</a></p>
-                    <p><a href="#" onclick="overlayWebView(false); return false;">Status Bar sits above WebView</a></p>
+                    <p><a href="#" onclick="StatusBar.overlaysWebView(true); return false;">Status Bar Overlays WebView</a></p>
+                    <p><a href="#" onclick="StatusBar.overlaysWebView(false); return false;">Status Bar sits above WebView</a></p>
                 
-                    <p><a href="#" onclick="lightContent(); return false;">Light Content Status Bar</a></p>
+                    <p><a href="#" onclick="StatusBar.styleBlackOpaque(); return false;">Black Opaque Status Bar</a></p>
                     <p><a href="#" onclick="StatusBar.styleLightContent(); return false;">Light Content Status Bar</a></p>
-                    <p><a href="#" onclick="defaultStyle(); return false;">Default Status Bar Style</a></p>
+                    <p><a href="#" onclick="StatusBar.styleDefault(); return false;">Default Status Bar Style</a></p>
                 </section>
                 <section style="background-image:url(img/3.jpg)">
                 	<!--div onClick="StatusBar.overlaysWebView(false);">NOT OVERLAYED</div-->
