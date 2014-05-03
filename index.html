@@ -51,7 +51,7 @@
 				}
 			},3000);
 			StatusBar.overlaysWebView(true);
-			$(document).click(function(e) {
+			document.addEventListener('touchend',function(){
                 myScroll.refresh();
 				alert(StatusBar.overlaysWebView());
             });
