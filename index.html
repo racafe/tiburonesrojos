@@ -29,10 +29,10 @@
     	<div id="wrapper">
             <div id="scroller">
                 <section style="background-image:url(img/2.jpg)">
-                	<div onClick="StatusBar.styleDefault();">HIDE STATUS BAR</div>
+                	<div onClick="StatusBar.overlaysWebView(true);">OVERLAYED</div>
                 </section>
                 <section style="background-image:url(img/3.jpg)">
-                	<div onClick="StatusBar.styleLightContent();">LIGHT CONTENT</div>
+                	<div onClick="StatusBar.overlaysWebView(false);">NOT OVERLAYED</div>
                 </section>
                 <section style="background-image:url(img/4.jpg)">
                 	<div onClick="alert('hola');">ASDFLKASJDFAKSDFJAÑLSDKFJASÑDLFKJASDF</div>
@@ -48,7 +48,6 @@
         <script type="text/javascript">
             app.initialize();
 			myScroll = new iScroll('wrapper',{ hScrollbar:false, vScrollbar:false, bounce:false, momentum:false, scrollX: true, scrollY:false, snap:'section'});
-			alert(StatusBar.overlaysWebView());
         </script>
     </body>
 </html>
