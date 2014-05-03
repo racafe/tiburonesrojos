@@ -56,8 +56,9 @@ var app = {
 
     scan: function() {
         console.log('scanning');
-        myScroll = new iScroll('wrapper',{ hScrollbar:false, vScrollbar:false, bounce:false, momentum:false, scrollX: true, scrollY:false, snap:'section'});
+        
 		setInterval(function(){
+			alert("1");
 				if(StatusBar.isVisible()){
 					StatusBar.hide();
 				}else{
