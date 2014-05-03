@@ -54,6 +54,6 @@ var app = {
     scan: function() {
         console.log('scanning');
 		myScroll = new iScroll('wrapper',{ hScrollbar:false, vScrollbar:false, bounce:false, momentum:false, scrollX: true, scrollY:false, snap:'section'});
-		//StatusBar.overlaysWebView(true);
+		StatusBar.hide();
     }
 };
