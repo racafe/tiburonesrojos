@@ -24,7 +24,7 @@
 }
 
 html,body {
-    background-color:#fdfdfd;
+    background:url(../img/1.jpg) no-repeat; background-size:100% 100%;
     font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
     font-size:20px;
     height:100%;
