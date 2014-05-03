@@ -17,6 +17,7 @@
 	
     <!--gap:plugin name="com.phonegap.plugins.barcodescanner"/-->
 	<!--gap:plugin name="com.phonegap.plugin.statusbar" /-->
+	<gap:plugin name="com.phonegap.plugin.statusbar" />
 	<gap:plugin name="org.apache.cordova.vibration" version="0.3.0" />
 	<!--gap:plugin name="com.phonegap.plugins.childbrowser" version="5.0.0" /-->
 	
@@ -34,7 +35,7 @@
     <preference name="phonegap-version" value="3.3.0" />
     <!--preference name="orientation"      value="landscape" /-->
     <preference name="target-device"    value="universal" />
-    <preference name="Fullscreen"       value="true" />
+    <!--preference name="Fullscreen"       value="true" /-->
     <preference name="webviewbounce"    value="false" />
 
     <icon src="icon.png" />
