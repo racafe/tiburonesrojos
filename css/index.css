@@ -36,5 +36,5 @@ html,body {
 }
 #wrapper{width:100%; overflow:hidden; height:100%;}
 #scroller {	width:500%;; height:100%}
-section{width:20%; float:left; height:100%; background-size:100% 100%;}
+section{width:20%; float:left; height:100%; background-size:100% 100%; position:relative;}
 section div{position:absolute; top:50%; margin-top:-20px; width:100%; text-align:center; color:#fff;}
